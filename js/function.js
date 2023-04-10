@@ -1,7 +1,9 @@
 function showCurrentMinute() {
     const currentTime = new Date();
     const currentMinute = currentTime .getMinutes();
-    const minuteText = `The current minute is ${currentMinute }.`;
+    const currentHour = currentTime.getHours();
+    const minute = currentHour*60 + currentMinute
+    const minuteText = `The current minute is ${minute }.`;
     const targetDiv = document.getElementById("current-minute");
     targetDiv.innerText = minuteText;
   }
