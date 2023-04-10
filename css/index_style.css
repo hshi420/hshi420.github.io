@@ -18,7 +18,11 @@ div.col-md-8#right-things{
     padding-right: 600px;
 }
 
-nav{
+h3{
+    color:purple
+}
+
+li{
     color:maroon
 }
 
