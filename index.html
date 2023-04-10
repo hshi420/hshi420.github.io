@@ -13,64 +13,81 @@
     
     
     <link rel="stylesheet" href="css/index_style.css">
-
-
+    <script src="js/function.js"></script>
+    
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-dark">
-              <div class="container">
-                <a class="navbar-brand" href="index.html">Home</a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <main>
+        <div class="container" id="two-columns">
+            <div class="row">
+                <!-- left part: avatar and navbar -->
+                <div class="col-md-4" id="left-things">
+                    <img src="data/images/avatar.png" class="img-circle">
+                    <h3 id="english-name">
+                        Haohan Shi
+                    </h3>
+                    <h3 id="chinese-name">
+                        施 浩晗
+                    </h3>
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="data" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="data/kanagawa.html">Under the Wave off Kanagawa</a>
-                                <a class="dropdown-item" href="data/virgin.html">Virgin and Child with Saint Catherine of Alexandria</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"> Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html"> About </a>
+                            <a class="nav-link" href="publications.html"> Publications </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="data" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Photography</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="data/chicago.html">Chicago</a>
+                                <a class="dropdown-item" href="data/alaska.html">Alaska</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html"> Contact </a>
                         </li>
-    
+                        <li class="nav-item">
+                            <a class="nav-link" href="test.html"> Test </a>
+                        </li>
                     </ul>
                 </div>
-          </div>
-        </nav>
-    </header>
-    <main>
-        
-        <div class="container-fluid">
-            <h1>
-                Hello World!
-            </h1>
-            <h3>
-                Haohan's Assignment Site for Data Publicaiton for Digital Humanities
-            </h3>
-            <p id="welcome"> This site is for assginment 2.</p>
-        </div>
-        
- 
-    </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+                <!-- right part, paragraphs -->
+                <div class="col-md-8" id="right-things">
+                    <p id="introduction">I'm an incoming Ph.D. student in Northwestern University's <a class="link" href="https://mts.northwestern.edu/">Media, Techonology, and Society</a> ,
+                        and I'm also a master's student in UChicago's <a href="https://macss.uchicago.edu/">MACSS</a> program. <br><br>
+                        I'm broadly interested in misinformation, science of science (dark pattern), online democracy, social media analysis, social network analysis, NLP, computational social science,
+                        and AI for social good. <br><br>
+                        At UChicago, I'm working in <a href="https://www.knowledgelab.org/">the Knowledge Lab</a>  with Prof. James Evans on an NSF-funded Misinformation Project. <br><br>
+                        Previously, I graduated from Emory University with B.S. in Mathematics/Computer Science and Psychology/Linguistics. At Emory, I worked in <a href="http://psychology.emory.edu/cognition/wolff/main2.html">the Concept Mining Lab</a> with Prof. Phillip Wolff on
+                        a computational cognitive science project.</p>
+                        <div id="button"><button type="button" class="btn btn-primary" onclick="showCurrentMinute()">Get Minute</button></div>
+                        <div id="current-minute"></div>
+                        
+                        <div id="button"><button type="button" class="btn btn-primary" onclick="hideElement()">Hide Element</button></div>
+                        <div id="hide">Let's hide this!</div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+            </div>
+            
+            
+            
+            
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
 </script>
 
 </body>

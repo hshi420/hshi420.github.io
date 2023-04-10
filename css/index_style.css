@@ -1,10 +1,68 @@
-h1{
-    color:black;
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-weight: lighter;
+    line-height: 1.5;
+    width: 800px;
+}
+
+div.col-md-4#left-things{
+    padding-top:70px;
+    padding-left:200px;
+}
+
+div.col-md-8#right-things{
+    padding-top:70px;
+    padding-right: 600px;
+}
+
+nav{
+    color:maroon
+}
+
+h3#english-name{
+    padding-top: 10px;
+}
+
+h3#chinese-name{
+    font-family: Kai;
+}
+
+img.img-circle{
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+img{
+    width: 800px;
+}
+
+figure{
+    padding-top: 50px;
+}
+
+figcaption {
+    padding-top: 20px;
+    padding-left: 370px;
+  }
+
+div#button{
+    padding-top: 20px;
 }
 
 nav{
     background-color: maroon;
 }
+
 .img-fluid{
     max-width: 60%;
+}
+
+a{
+    text-decoration: none;
+    color: red;
 }
