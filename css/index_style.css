@@ -3,19 +3,40 @@ body {
 }
 
 p{
-    font-weight: lighter;
     line-height: 1.5;
     width: 800px;
+    line-height: 2;
 }
 
-div.col-md-4#left-things{
-    padding-top:70px;
-    padding-left:200px;
+p.year{
+    font-size: larger;
 }
 
-div.col-md-8#right-things{
+p#address{
+    line-height: 3;
+    white-space: pre;
+}
+
+
+div.col-md-3#left-things{
     padding-top:70px;
-    padding-right: 600px;
+    padding-left:100px;
+
+}
+
+div.col-md-9#right-things{
+    padding-top:80px;
+    padding-left: 100px;
+}
+
+div.col-md-9#right-things p{
+    max-width: 100%;
+    width: 100;
+    word-wrap: break-word;
+}
+
+div.wrapper{
+    margin-right: 100px;
 }
 
 h3{
@@ -28,7 +49,7 @@ li{
 }
 
 h3#english-name{
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 h3#chinese-name{
@@ -47,11 +68,15 @@ img{
 }
 
 figure{
-    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+figure figcaption {
+    white-space: nowrap;
 }
 
 figcaption {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-left: 370px;
   }
 
