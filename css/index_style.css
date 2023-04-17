@@ -1,10 +1,100 @@
-h1{
-    color:black;
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 100px;
+}
+
+p{
+    line-height: 1.5;
+    width: 800px;
+    line-height: 2;
+}
+
+div.col-md-3#left-things{
+    padding-top:70px;
+    padding-left:100px;
+
+}
+
+div.col-md-9#right-things{
+    padding-top:80px;
+    padding-left: 100px;
+}
+
+div.col-md-9#right-things p{
+    max-width: 100%;
+    width: 100;
+    word-wrap: break-word;
+}
+
+div.wrapper{
+    margin-right: 100px;
+}
+
+h3{
+    color:#4E2A84;
+
+}
+
+h5{
+    color:#4E2A84;
+    padding-top: 100px;
+
+}
+
+h6{
+    color: #4E2A84;
+    padding-bottom: 10px;
+}
+
+li{
+    color:maroon
+}
+
+h3#english-name{
+    padding-top: 30px;
+}
+
+h3#chinese-name{
+    font-family: Kai;
+}
+
+img.img-circle{
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+img{
+    width: 800px;
+}
+
+figure{
+    padding-bottom: 80px;
+}
+
+figure figcaption {
+    white-space: nowrap;
+}
+
+figcaption {
+    padding-top: 30px;
+    padding-left: 370px;
+  }
+
+div#button{
+    padding-top: 20px;
 }
 
 nav{
     background-color: maroon;
 }
+
 .img-fluid{
     max-width: 60%;
+}
+
+a{
+    text-decoration: none;
+    color: red;
 }
