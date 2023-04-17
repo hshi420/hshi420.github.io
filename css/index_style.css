@@ -1,5 +1,6 @@
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 100px;
 }
 
 p{
@@ -9,10 +10,11 @@ p{
 }
 
 p.year{
-    font-size: larger;
+    font-size: large;
+    padding-top: 15px;
 }
 
-p#address{
+p#contact{
     line-height: 3;
     white-space: pre;
 }
@@ -40,7 +42,13 @@ div.wrapper{
 }
 
 h3{
-    color:#4E2A84
+    color:#4E2A84;
+
+}
+
+h5{
+    color:#4E2A84;
+    padding-top: 100px;
 
 }
 

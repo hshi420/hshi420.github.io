@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Digital Chalkboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/chalkboard_style.css">
+    
+    <script src="js/chalkboard_function.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    
+    
+</head>
+
+<body onload="mapLoad()">
+    <header>
+        <!-- place navbar here -->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#publication-heading"> Publications </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact-heading"> Contact </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    
+    <div class="container">
+        
+        <div class="container">
+            <div class="row flex-column flex-md-row g-5">
+                <div class="col-md-3">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nisi lacus. Vivamus congue, erat ultrices maximus hendrerit, orci mauris viverra enim, eu hendrerit erat quam eget est. Vivamus sollicitudin blandit massa, in mollis neque pharetra eget. Morbi ultrices a metus vel venenatis. In eu eros fermentum, suscipit quam vel, ullamcorper neque. Nullam non maximus ex. Praesent quis fringilla elit, et aliquam leo. Curabitur ut eleifend ante. Ut non lacus arcu. Proin pellentesque a odio ac tincidunt. Cras sit amet ultricies felis, ut elementum mi. Donec ante felis, iaculis quis nisl at, viverra semper velit.
+                    </p>
+                    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img src="data/images/DSCF3000.JPG" class="w-100 d-block" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="data/images/DSCF3000.JPG" class="w-100 d-block" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="data/images/DSCF3000.JPG" class="w-100 d-block" alt="Third slide">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p>Sed sed consectetur ligula. Nulla eu ex facilisis, pharetra enim in, euismod eros. Ut tristique est id velit ullamcorper pretium. Vivamus nec mollis est. Nulla quis efficitur neque. Integer vitae accumsan nibh, vel pellentesque dolor. Sed aliquet lectus non lacus lobortis euismod. Phasellus auctor et odio et ornare. Nam lacinia placerat nisl, ut venenatis erat bibendum ut. Integer a pretium mauris, eu imperdiet urna. In vel purus faucibus, lacinia ipsum sed, hendrerit augue. Ut rutrum, erat id rutrum congue, mauris tortor eleifend quam, sed dignissim neque tellus non eros. Sed vel mauris varius, lacinia nibh ut, consectetur lorem. Pellentesque nec egestas enim. Vestibulum vestibulum, ante vel rutrum vehicula, nibh tellus malesuada ligula, vel venenatis quam sapien et erat. Morbi condimentum ligula in tortor bibendum, vel vehicula sapien bibendum.</p>
+                    <img src="data/images/DSCF3026.JPG" class="img-fluid rounded-top" alt="">
+                </div>
+                <div class="col-md-3">
+                    <p>Phasellus consequat, lectus at interdum lacinia, mauris enim pellentesque ipsum, ac imperdiet ligula massa sit amet elit. Curabitur fringilla porta est, et tempus risus fringilla sit amet. In at faucibus diam. Quisque congue ullamcorper erat, in volutpat lorem consequat sit amet. Fusce augue nibh, porta vitae enim ac, euismod accumsan eros. Vivamus rutrum maximus pulvinar. Curabitur quis rhoncus ex.</p>
+                    <img src="data/images/DSCF3035.JPG" class="img-fluid rounded-top" alt="">
+                </div>
+                <div class="col-md-3">
+                    <p>Cras eget est porttitor, tristique sem sit amet, aliquet lectus. Cras a felis at metus gravida congue eget vel massa. Ut mattis tempor sapien, quis porttitor metus posuere ac. Nam commodo neque tincidunt, feugiat ex a, dignissim magna. Etiam mattis, tellus nec sagittis viverra, magna est mollis mauris, at semper purus lorem in ligula. Etiam luctus tortor mi. Proin aliquet libero elit, a porta enim auctor eleifend. Nunc suscipit quis nisi in semper. Maecenas eleifend turpis ac congue consequat. Suspendisse faucibus interdum massa vitae dapibus.
+                        
+                    </p>
+                    <img src="data/images/DSCF2536.JPG" class="img-fluid rounded-top" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container" style="padding-top: 50px;">
+            <button class="btn btn-block btn-warning" onclick="showAlert()">Show Alert!</button>
+        </div>
+
+        <div class="container" style="padding-top: 50px;">
+            <button class="btn btn-block btn-warning" onclick="parseArray()">Test parseArray</button>
+        </div>
+
+        <form style="padding-top: 100px;">
+            <div class = "row">
+                <div class="col">
+                    <input id="searchTerm" type="text" class="form-control" placeholder="Enter your search term here.">
+                </div>
+            </div>
+        </form>
+
+        <button type="submit" class="btn btn-primary" onclick="wikiAPI()">Search</button>
+
+        <div class="container" id="wiki"></div>
+
+
+        <div class="container mt-3">
+            <div id="map"></div>
+        </div>
+        
+    </div>
+
+    
+    
+</main>
+<footer class="footer mt-auto py-3 bg-light text-center d-none d-md-block">
+    <!-- place footer here -->
+    <div class="container">
+        <span class="text-muted">This page is for assignment 4 :).</span>
+    </div>
+</footer>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+</script>
+
+<script src="js/wikiAPI.js"></script>
+<script src="js/mapAPI.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+crossorigin=""></script>
+</body>
+
+</html>
