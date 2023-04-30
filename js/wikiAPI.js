@@ -10,9 +10,14 @@ function wikiAPI(){
         var pages = wikiObject.query.pages;
         for (var i in pages){
             var newDiv = document.createElement('div');
+            var myAnchor = document.createElement('a');
+            var pageUrl = 'https://en.wikipedia.org/wiki/' + pages[i].title;
+            myAnchor.href = pageUrl;
+            myAnchor.innerText = pages[i].title;
             newDiv.setAttribute('class', 'row h4');
             document.getElementById('wiki').append(newDiv);
-            newDiv.innerText = pages[i].title;
+            newDiv.append(myAnchor)
+
         }
     }
     connect.send()
