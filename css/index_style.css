@@ -96,5 +96,6 @@ nav{
 
 a{
     text-decoration: none;
-    color: red;
+    font-weight: bold;
+    color: black;
 }
