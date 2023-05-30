@@ -52,10 +52,11 @@ li{
 
 h3#english-name{
     padding-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif'；
 }
 
 h3#chinese-name{
-    font-family: Kai;
+    font-family: STKaiti;
 }
 
 img.img-circle{
