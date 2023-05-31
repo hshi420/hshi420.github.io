@@ -56,7 +56,7 @@ h3#english-name{
 }
 
 h3#chinese-name{
-    font-family: STFangsong;
+    font-family: SimSun;
 }
 
 img.img-circle{
@@ -100,3 +100,13 @@ a{
     font-weight: bold;
     color: black;
 }
+
+
+  
+.extra-bold {
+    font-weight: 900; 
+  }
+
+.bold {
+    font-weight: 600; 
+  }
