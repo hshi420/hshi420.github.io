@@ -1,2 +1,2 @@
-# Haohan's Personal Site Project
+# Haohan's Personal Site
 The website was created from scratch.
