@@ -8,8 +8,8 @@ p{
     width: 800px;
     line-height: 2;
 }
-  p.publication {
-    font-size: smaller;
+  .publication {
+    font-size: 12px;
   }
 
 div.col-md-3#left-things{
