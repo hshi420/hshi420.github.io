@@ -79,6 +79,7 @@ figure{
 
 figure figcaption {
     white-space: nowrap;
+    text-align: center;
 }
 
 figcaption {
