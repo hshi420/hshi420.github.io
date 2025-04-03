@@ -82,8 +82,9 @@ figure figcaption {
 }
 
 figcaption {
-    padding-top: 30px;
-    padding-left: 370px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
   }
 
 div#button{
